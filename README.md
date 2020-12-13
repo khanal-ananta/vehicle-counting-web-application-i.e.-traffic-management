@@ -83,14 +83,14 @@ And edit nginx configuration file to access the media folder of the project in E
 Web application template is built with basic html and CSS (JavaScript are better suited for front-end development but since our web interface is very simple using html and CSS is enough). The html form is used to input the image and the videos which needs to be classified. The uploaded image/videos are then saved in local drive in case of localhost as a server and in EBS volumes in-case Nginx with AWS is used as server. saved image/video is then sent to the yolo algorithm for classification which is again saved and then displayed in the web page. 
 
 
-![](web_application/zimage_for_readme/image1.jpg)
+![](zimage_for_readme/image1.jpg)
 
                                           Fig 1: web application architecture 
 
 ## web application interface: 
 The web interface consists of one simple form to upload the video to be classified and two videos output sections: one of which is the original uploaded video and second one is the classified output video. 
 
-![](web_application/zimage_for_readme/image3.JPG)
+![](zimage_for_readme/image3.JPG)
 
                                           Fig 2: web application interface 
 
