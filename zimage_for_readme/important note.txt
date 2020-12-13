@@ -1,0 +1,1 @@
+this folder contains images that are displayed in readme file. delete this folder for running this project.

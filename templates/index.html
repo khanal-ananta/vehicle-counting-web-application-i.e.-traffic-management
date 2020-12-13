@@ -1,0 +1,56 @@
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>vehicle detection</title>
+    <style>
+  h1 {text-align: center;border-style: solid;border-width: 2px;border-color: green;background-color: lightblue;}
+
+  section.form1 {text-align: left;border-style: solid;border-width: 2px;border-color: green;width:300px;height:140px;
+                 margin-left: 480px;padding-left: 10px}
+
+
+  div.total {text-align: center;margin: 5px 5px 10px 10px;background-color:D3D3D3;display: block;}
+  div.container { display:inline-block;margin-left: 50px;margin-right: 80px;margin-bottom: 30px}
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="total">
+    <h1>vehicle detection in video</h1>
+
+    <section class="form1">
+        <form action="predict" enctype="multipart/form-data" method="post">
+
+            {% csrf_token %}
+            <h3>Upload video here:</h3>
+            <input name="file1" type="file"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <div class="container">
+        <h3>The uploaded video is:</h3>
+        <video controls height="340" width="420">
+            <source alt='imagename' src={{name}} type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <h3>The classified video is:</h3>
+        <video controls height="340" width="420">
+            <source src="media/final.mp4" type="video/mp4">
+        </video>
+        <div>
+
+
+        </div>
+
+</body>
+
+
+</html>
